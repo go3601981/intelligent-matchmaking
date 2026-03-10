@@ -6,13 +6,13 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
   standalone: true,
   imports: [SlideLayoutComponent],
   template: `
-    <app-slide-layout title="Expo Pass Intelligent Matchmaking" subtitle="Strategic Product Proposal">
+    <app-slide-layout title="Expo Pass Intelligent Matchmaking" subtitle="Strategic Product Proposal" [showLine]="false">
       <div class="max-w-4xl mb-12">
-        <p class="text-2xl md:text-3xl text-[#1F2937] font-bold leading-tight mb-6">
+        <p class="text-2xl md:text-3xl text-blue-600 font-bold leading-tight mb-6">
           Turning Event Networking into Sales Opportunities
         </p>
         <p class="text-lg md:text-xl text-[#4B5563] font-light leading-relaxed max-w-3xl">
-          A recommendation system layered on top of attendee discovery, chat, and meeting coordination.
+          A recommendation system powered by <span class="font-bold text-blue-600">Vector Search</span> and <span class="font-bold text-blue-600">Behavioral Intelligence</span>, layered on top of attendee discovery, chat, and meeting coordination.
         </p>
       </div>
 

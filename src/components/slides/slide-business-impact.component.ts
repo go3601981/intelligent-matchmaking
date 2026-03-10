@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { SlideLayoutComponent } from '../ui/slide-layout.component';
+import { StrategicInsightComponent } from '../ui/strategic-insight.component';
 
 @Component({
   selector: 'app-slide-business-impact',
   standalone: true,
-  imports: [CommonModule, MatIconModule, SlideLayoutComponent],
+  imports: [CommonModule, MatIconModule, SlideLayoutComponent, StrategicInsightComponent],
   template: `
     <app-slide-layout title="Networking That Drives Sales" subtitle="The Strategic Business Impact of Intelligent Matchmaking">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
@@ -79,16 +80,10 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
           </div>
 
           <!-- Floating Badge -->
-          <div class="absolute -bottom-2 -right-2 bg-white p-3 rounded-xl shadow-xl border border-gray-100 max-w-[180px]">
-            <div class="flex items-center gap-1.5 mb-1">
-              <div class="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
-                <mat-icon class="text-[10px] h-2.5 w-2.5">verified</mat-icon>
-              </div>
-              <span class="text-[9px] font-bold text-gray-900">Strategic Outcome</span>
-            </div>
-            <p class="text-[10px] text-gray-600 leading-tight">
-              Intelligent matchmaking transforms passive attendance into <span class="text-blue-600 font-bold">active business growth</span>.
-            </p>
+          <div class="absolute -bottom-2 -right-2 max-w-[200px]">
+            <app-strategic-insight label="Strategic Outcome" icon="verified" type="success">
+              Intelligent matchmaking transforms passive attendance into <span class="text-emerald-600 font-bold">active business growth</span>.
+            </app-strategic-insight>
           </div>
         </div>
       </div>
@@ -102,24 +97,24 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
 export class SlideBusinessImpactComponent {
   readonly impacts = [
     { 
-      title: 'Exhibitor Lead Gen', 
-      icon: 'leaderboard', 
-      description: 'Connecting vendors with high-intent buyers based on specific needs.' 
+      title: 'Lead Qualification', 
+      icon: 'verified', 
+      description: 'Exhibitors connect with highly qualified prospects automatically.' 
     },
     { 
-      title: 'Attendee Connections', 
-      icon: 'people_alt', 
-      description: 'Fostering high-value peer-to-peer networking and knowledge sharing.' 
+      title: 'Higher Retention', 
+      icon: 'sync', 
+      description: 'Attendees who find high value return year after year.' 
     },
     { 
-      title: 'Partnership Opportunities', 
-      icon: 'handshake', 
-      description: 'Identifying strategic synergies between organizations and startups.' 
+      title: 'Increased ROI', 
+      icon: 'trending_up', 
+      description: 'Directly correlates networking success with business outcomes.' 
     },
     { 
-      title: 'Investor Meetings', 
-      icon: 'monetization_on', 
-      description: 'Matching capital with innovation through data-driven introductions.' 
+      title: 'Premium Value', 
+      icon: 'workspace_premium', 
+      description: 'Positions Expo Pass as a strategic business partner, not just a tool.' 
     }
   ];
 

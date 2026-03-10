@@ -86,6 +86,17 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
           <div class="absolute -top-4 -left-4 bg-emerald-500 text-white px-4 py-2 rounded-xl shadow-xl font-bold text-xs tracking-wide">
             THE EXPO PASS WAY
           </div>
+
+          <!-- Privacy Note -->
+          <div class="absolute -bottom-4 -right-4 bg-white/90 backdrop-blur p-3 rounded-xl shadow-lg border border-gray-100 max-w-[140px]">
+            <div class="flex items-center gap-1.5 mb-1">
+              <mat-icon class="text-emerald-500 text-[10px] h-2.5 w-2.5">security</mat-icon>
+              <span class="text-[8px] font-bold text-gray-900 uppercase">Privacy First</span>
+            </div>
+            <p class="text-[8px] text-gray-500 leading-tight">
+              Opt-in only. Users maintain full control over their data and matching visibility.
+            </p>
+          </div>
         </div>
       </div>
     </app-slide-layout>

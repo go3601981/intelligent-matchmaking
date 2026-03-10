@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { SlideLayoutComponent } from '../ui/slide-layout.component';
+import { StrategicInsightComponent } from '../ui/strategic-insight.component';
 
 @Component({
   selector: 'app-slide-weaknesses',
   standalone: true,
-  imports: [CommonModule, MatIconModule, SlideLayoutComponent],
+  imports: [CommonModule, MatIconModule, SlideLayoutComponent, StrategicInsightComponent],
   template: `
     <app-slide-layout title="Weaknesses in Current Systems" subtitle="The Limitations of Traditional Matchmaking">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -34,14 +35,9 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
             <div class="absolute top-0 right-0 w-48 h-48 bg-red-500/5 rounded-full blur-3xl -mr-24 -mt-24"></div>
             
             <div class="relative z-10 space-y-6">
-              <div class="inline-flex items-center gap-2 px-2 py-0.5 bg-red-500/20 text-red-400 rounded-full text-[10px] font-bold uppercase tracking-widest">
-                <mat-icon class="text-xs h-3 w-3">lightbulb</mat-icon>
-                Key Insight
-              </div>
-
-              <h4 class="text-2xl md:text-3xl font-light text-white leading-tight">
+              <app-strategic-insight label="Key Insight" icon="lightbulb" type="dark">
                 Matchmaking often exists <span class="text-red-400 font-bold italic">outside</span> the natural networking flow.
-              </h4>
+              </app-strategic-insight>
 
               <div class="space-y-3 pt-6 border-t border-white/10">
                 <p class="text-gray-400 leading-relaxed text-xs">

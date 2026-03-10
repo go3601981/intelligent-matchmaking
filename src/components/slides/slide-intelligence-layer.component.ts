@@ -19,12 +19,23 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
               Instead of being a siloed feature, matchmaking acts as a filter and accelerator for the existing networking ecosystem.
             </p>
             
-            <div class="pt-4 border-t border-gray-50">
+            <div class="pt-4 border-t border-gray-50 space-y-3">
               <div class="flex items-center gap-3 p-3 bg-blue-50 rounded-xl">
                 <mat-icon class="text-blue-600 text-lg h-5 w-5">bolt</mat-icon>
                 <p class="text-blue-900 font-medium text-sm">
                   Helping users identify valuable connections <span class="font-bold">faster</span>.
                 </p>
+              </div>
+              
+              <div class="grid grid-cols-2 gap-2">
+                <div class="p-2 bg-gray-50 rounded-lg border border-gray-100">
+                  <p class="text-[9px] font-bold text-blue-600 uppercase tracking-wider mb-1">Vector Search</p>
+                  <p class="text-[10px] text-gray-500 leading-tight">Semantic matching of interests and goals.</p>
+                </div>
+                <div class="p-2 bg-gray-50 rounded-lg border border-gray-100">
+                  <p class="text-[9px] font-bold text-blue-600 uppercase tracking-wider mb-1">Behavioral AI</p>
+                  <p class="text-[10px] text-gray-500 leading-tight">Learning from chat and profile interactions.</p>
+                </div>
               </div>
             </div>
           </div>

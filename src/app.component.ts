@@ -18,6 +18,8 @@ import { SlideBusinessImpactComponent } from './components/slides/slide-business
 import { SlideStrategicOpportunityComponent } from './components/slides/slide-strategic-opportunity.component';
 import { SlideImplementationApproachComponent } from './components/slides/slide-implementation-approach.component';
 import { SlideLongTermVisionComponent } from './components/slides/slide-long-term-vision.component';
+import { SlideComparisonComponent } from './components/slides/slide-comparison.component';
+import { SlideNextStepsComponent } from './components/slides/slide-next-steps.component';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +34,7 @@ import { SlideLongTermVisionComponent } from './components/slides/slide-long-ter
     SlideRealityComponent,
     SlideTypicalMatchmakingComponent,
     SlideWeaknessesComponent,
+    SlideComparisonComponent,
     SlideExpoAdvantageComponent,
     SlideIntelligenceLayerComponent,
     SlideMatchmakingBehaviorComponent,
@@ -40,7 +43,8 @@ import { SlideLongTermVisionComponent } from './components/slides/slide-long-ter
     SlideBusinessImpactComponent,
     SlideStrategicOpportunityComponent,
     SlideImplementationApproachComponent,
-    SlideLongTermVisionComponent
+    SlideLongTermVisionComponent,
+    SlideNextStepsComponent
   ],
   template: `
     <app-logo />
@@ -84,47 +88,57 @@ import { SlideLongTermVisionComponent } from './components/slides/slide-long-ter
         }
         @case (6) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-expo-advantage />
+            <app-slide-comparison />
           </div>
         }
         @case (7) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-intelligence-layer />
+            <app-slide-expo-advantage />
           </div>
         }
         @case (8) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-matchmaking-behavior />
+            <app-slide-intelligence-layer />
           </div>
         }
         @case (9) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-participant-list-integration />
+            <app-slide-matchmaking-behavior />
           </div>
         }
         @case (10) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-chat-integration />
+            <app-slide-participant-list-integration />
           </div>
         }
         @case (11) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-business-impact />
+            <app-slide-chat-integration />
           </div>
         }
         @case (12) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-strategic-opportunity />
+            <app-slide-business-impact />
           </div>
         }
         @case (13) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-implementation-approach />
+            <app-slide-strategic-opportunity />
           </div>
         }
         @case (14) {
           <div class="w-full h-full animate-fade-in">
+            <app-slide-implementation-approach />
+          </div>
+        }
+        @case (15) {
+          <div class="w-full h-full animate-fade-in">
             <app-slide-long-term-vision />
+          </div>
+        }
+        @case (16) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-next-steps />
           </div>
         }
       }

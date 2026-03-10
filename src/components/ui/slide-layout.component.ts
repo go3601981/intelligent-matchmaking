@@ -20,7 +20,9 @@ import { MatIconModule } from '@angular/material/icon';
           <h1 class="text-2xl md:text-3xl font-bold text-[#1F2937] leading-tight tracking-tight">
             {{ title() }}
           </h1>
-          <div class="w-12 h-1 bg-blue-600 mt-2 rounded-full"></div>
+          @if (showLine()) {
+            <div class="w-12 h-1 bg-blue-600 mt-2 rounded-full"></div>
+          }
         </div>
 
         <div class="content-area">
@@ -36,4 +38,5 @@ import { MatIconModule } from '@angular/material/icon';
 export class SlideLayoutComponent {
   title = input<string>('Slide Title');
   subtitle = input<string>('');
+  showLine = input<boolean>(true);
 }

@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { SlideLayoutComponent } from '../ui/slide-layout.component';
+import { StrategicInsightComponent } from '../ui/strategic-insight.component';
 
 @Component({
   selector: 'app-slide-networking-engine',
   standalone: true,
-  imports: [CommonModule, MatIconModule, SlideLayoutComponent],
+  imports: [CommonModule, MatIconModule, SlideLayoutComponent, StrategicInsightComponent],
   template: `
     <app-slide-layout title="The Expo Pass Networking Engine" subtitle="A Unified System for Professional Connection">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start h-full">
@@ -53,15 +54,9 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
           </div>
 
           <!-- Key Message (Moved here) -->
-          <div class="p-4 bg-gray-900 rounded-2xl text-white relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-24 h-24 bg-blue-600/20 blur-3xl rounded-full"></div>
-            <div class="relative z-10">
-              <h4 class="text-blue-400 font-bold text-[9px] uppercase tracking-widest mb-1">Key Message</h4>
-              <p class="text-xs font-light italic leading-relaxed">
-                "Expo Pass is evolving into a <span class="text-blue-400 font-bold">Networking Engine</span> that automates discovery, facilitates conversation, and coordinates the meetings that build business relationships."
-              </p>
-            </div>
-          </div>
+          <app-strategic-insight label="Key Message" icon="psychology" type="dark">
+            Expo Pass is evolving into a <span class="text-blue-400 font-bold">Networking Engine</span> that automates discovery, facilitates conversation, and coordinates the meetings that build business relationships.
+          </app-strategic-insight>
         </div>
 
         <!-- Right Column: Content Details -->
