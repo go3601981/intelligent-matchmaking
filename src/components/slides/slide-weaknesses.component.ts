@@ -10,19 +10,19 @@ import { StrategicInsightComponent } from '../ui/strategic-insight.component';
   imports: [CommonModule, MatIconModule, SlideLayoutComponent, StrategicInsightComponent],
   template: `
     <app-slide-layout title="Weaknesses in Current Systems" subtitle="The Limitations of Traditional Matchmaking">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <div class="space-y-6">
-          <h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Key Limitations (e.g., Whova)</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+        <div class="space-y-4">
+          <h3 class="text-[9px] font-bold text-gray-400 uppercase tracking-wider">Key Limitations (e.g., Whova)</h3>
           
-          <div class="space-y-3">
+          <div class="space-y-2">
             @for (weakness of weaknesses; track weakness.text) {
-              <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-gray-100 shadow-sm group hover:border-red-100 transition-colors">
-                <div class="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center text-red-500 shrink-0 group-hover:bg-red-500 group-hover:text-white transition-colors">
-                  <mat-icon class="text-lg h-5 w-5">{{ weakness.icon }}</mat-icon>
+              <div class="flex items-start gap-2.5 p-2.5 bg-white rounded-lg border border-gray-100 shadow-sm group hover:border-red-100 transition-colors">
+                <div class="w-7 h-7 rounded bg-red-50 flex items-center justify-center text-red-500 shrink-0 group-hover:bg-red-500 group-hover:text-white transition-colors">
+                  <mat-icon class="text-base h-4 w-4">{{ weakness.icon }}</mat-icon>
                 </div>
                 <div class="space-y-0.5">
-                  <p class="text-gray-900 font-semibold text-sm">{{ weakness.text }}</p>
-                  <p class="text-[11px] text-gray-500 leading-tight">{{ weakness.description }}</p>
+                  <p class="text-gray-900 font-bold text-[13px]">{{ weakness.text }}</p>
+                  <p class="text-[10px] text-gray-500 leading-tight">{{ weakness.description }}</p>
                 </div>
               </div>
             }
@@ -30,17 +30,17 @@ import { StrategicInsightComponent } from '../ui/strategic-insight.component';
         </div>
 
         <div class="lg:sticky lg:top-4">
-          <div class="p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-[32px] shadow-2xl relative overflow-hidden">
+          <div class="p-5 bg-gradient-to-br from-gray-900 to-gray-800 rounded-[24px] shadow-xl relative overflow-hidden">
             <!-- Decorative background pattern -->
-            <div class="absolute top-0 right-0 w-48 h-48 bg-red-500/5 rounded-full blur-3xl -mr-24 -mt-24"></div>
+            <div class="absolute top-0 right-0 w-40 h-40 bg-red-500/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
             
-            <div class="relative z-10 space-y-6">
-              <app-strategic-insight label="Key Insight" icon="lightbulb" type="dark">
+            <div class="relative z-10 space-y-4">
+              <app-strategic-insight label="Key Insight" icon="lightbulb" type="dark" class="scale-95 origin-left">
                 Matchmaking often exists <span class="text-red-400 font-bold italic">outside</span> the natural networking flow.
               </app-strategic-insight>
 
-              <div class="space-y-3 pt-6 border-t border-white/10">
-                <p class="text-gray-400 leading-relaxed text-xs">
+              <div class="space-y-2 pt-4 border-t border-white/10">
+                <p class="text-gray-400 leading-tight text-[11px]">
                   When matchmaking is a separate "tab" or "feature," it requires active effort from the user to engage with it, rather than being integrated into their existing event experience.
                 </p>
               </div>
@@ -48,21 +48,21 @@ import { StrategicInsightComponent } from '../ui/strategic-insight.component';
           </div>
 
           <!-- Visual representation of "Outside the flow" -->
-          <div class="mt-6 flex justify-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-              <mat-icon class="text-lg h-5 w-5">person</mat-icon>
+          <div class="mt-4 flex justify-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+              <mat-icon class="text-base h-4 w-4">person</mat-icon>
             </div>
-            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-              <mat-icon class="text-lg h-5 w-5">chat</mat-icon>
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+              <mat-icon class="text-base h-4 w-4">chat</mat-icon>
             </div>
-            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-              <mat-icon class="text-lg h-5 w-5">event</mat-icon>
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+              <mat-icon class="text-base h-4 w-4">event</mat-icon>
             </div>
-            <div class="w-3 flex items-center justify-center text-gray-300">
-              <mat-icon class="text-sm h-4 w-4">arrow_forward</mat-icon>
+            <div class="w-2 flex items-center justify-center text-gray-300">
+              <mat-icon class="text-[10px] h-3 w-3">arrow_forward</mat-icon>
             </div>
-            <div class="w-10 h-10 rounded-full bg-red-100 border-2 border-red-400 border-dashed flex items-center justify-center text-red-600">
-              <mat-icon class="text-lg h-5 w-5">psychology</mat-icon>
+            <div class="w-8 h-8 rounded-full bg-red-100 border-2 border-red-400 border-dashed flex items-center justify-center text-red-600">
+              <mat-icon class="text-base h-4 w-4">psychology</mat-icon>
             </div>
           </div>
         </div>
