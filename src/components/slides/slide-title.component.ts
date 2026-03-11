@@ -6,7 +6,12 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
   standalone: true,
   imports: [SlideLayoutComponent],
   template: `
-    <app-slide-layout title="Expo Pass Intelligent Matchmaking" subtitle="Strategic Product Proposal" [showLine]="false">
+    <app-slide-layout 
+      title="Expo Pass Intelligent Matchmaking" 
+      subtitle="Strategic Product Proposal" 
+      [showLine]="false"
+      titleClass="text-4xl md:text-5xl lg:text-6xl"
+    >
       <div class="max-w-4xl mb-12">
         <p class="text-2xl md:text-3xl text-blue-600 font-bold leading-tight mb-6">
           Turning Event Networking into Sales Opportunities

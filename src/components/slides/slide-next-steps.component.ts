@@ -45,19 +45,19 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
             <div class="space-y-4 pt-6 border-t border-white/10">
               <div class="flex items-center gap-3">
                 <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400">
-                  <mat-icon class="text-xs h-3 w-3">check</mat-icon>
+                  <mat-icon class="text-[14px] w-auto h-auto leading-none">check</mat-icon>
                 </div>
                 <span class="text-sm font-light">Define data schema for matching</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400">
-                  <mat-icon class="text-xs h-3 w-3">check</mat-icon>
+                  <mat-icon class="text-[14px] w-auto h-auto leading-none">check</mat-icon>
                 </div>
                 <span class="text-sm font-light">Prototype "Suggested" UI in Participant List</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400">
-                  <mat-icon class="text-xs h-3 w-3">check</mat-icon>
+                  <mat-icon class="text-[14px] w-auto h-auto leading-none">check</mat-icon>
                 </div>
                 <span class="text-sm font-light">Select Vector Database provider</span>
               </div>
@@ -75,6 +75,11 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
   `,
   styles: [`
     :host { display: block; height: 100%; }
+    mat-icon {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
   `]
 })
 export class SlideNextStepsComponent {

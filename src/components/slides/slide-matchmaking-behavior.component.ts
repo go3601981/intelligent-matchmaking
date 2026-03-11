@@ -65,14 +65,15 @@ export class SlideMatchmakingBehaviorComponent {
     { text: 'Share industry interests', icon: 'interests' },
     { text: 'Attend the same sessions', icon: 'event_seat' },
     { text: 'Complementary roles (Buyer / Vendor)', icon: 'handshake' },
-    { text: 'Interact with similar exhibitors', icon: 'storefront' }
+    { text: 'Interact with similar exhibitors', icon: 'storefront' },
+    { text: 'The "Disney Model": Time-First Facilitation', icon: 'schedule' }
   ];
 
   readonly suggestions = [
     { 
-      title: 'People you may want to meet', 
-      icon: 'person_add', 
-      description: 'Based on your profile interests and goals.',
+      title: 'The "Disney Model" Scheduling', 
+      icon: 'auto_awesome', 
+      description: 'Pick a time slot, and the app proposes the best people available to meet.',
       gradient: 'from-blue-600 to-indigo-700'
     },
     { 

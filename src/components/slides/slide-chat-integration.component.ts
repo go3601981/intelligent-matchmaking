@@ -50,6 +50,20 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
               This converts <span class="font-bold italic">conversation</span> into <span class="font-bold italic">action</span>.
             </p>
           </div>
+
+          <!-- Welcome Modal Concept -->
+          <div class="p-4 bg-white rounded-2xl border border-gray-100 shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-16 h-16 bg-blue-50 rounded-full -mr-8 -mt-8"></div>
+            <div class="relative z-10 space-y-2">
+              <div class="flex items-center gap-2">
+                <mat-icon class="text-blue-600 text-sm h-4 w-4">waving_hand</mat-icon>
+                <span class="text-[9px] font-bold text-gray-900 uppercase tracking-widest">Welcome Icebreaker</span>
+              </div>
+              <p class="text-[10px] text-gray-600 leading-tight">
+                "Welcome to the chat! Based on your shared interest in <span class="text-blue-600 font-bold">AI Strategy</span>, here are 2 icebreaker questions to get started."
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="relative">

@@ -37,6 +37,16 @@ import { SlideLayoutComponent } from '../ui/slide-layout.component';
                   <p class="text-[10px] text-gray-500 leading-tight">Learning from chat and profile interactions.</p>
                 </div>
               </div>
+
+              <div class="p-3 bg-amber-50 rounded-xl border border-amber-100 mt-2">
+                <div class="flex items-center gap-2 mb-1">
+                  <mat-icon class="text-amber-600 text-xs h-3 w-3">security</mat-icon>
+                  <span class="text-[9px] font-bold text-amber-900 uppercase">Ecosystem Management</span>
+                </div>
+                <p class="text-[10px] text-amber-800 leading-tight">
+                  Balancing the "Wolves" (Sales) and "Sheep" (Attendees) by prioritizing peer-to-peer value and preventing pitch fatigue.
+                </p>
+              </div>
             </div>
           </div>
 

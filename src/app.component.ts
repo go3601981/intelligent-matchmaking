@@ -20,6 +20,8 @@ import { SlideImplementationApproachComponent } from './components/slides/slide-
 import { SlideLongTermVisionComponent } from './components/slides/slide-long-term-vision.component';
 import { SlideComparisonComponent } from './components/slides/slide-comparison.component';
 import { SlideNextStepsComponent } from './components/slides/slide-next-steps.component';
+import { SlideDisneyModelComponent } from './components/slides/slide-disney-model.component';
+import { SlideProactiveEngagementComponent } from './components/slides/slide-proactive-engagement.component';
 
 @Component({
   selector: 'app-root',
@@ -38,6 +40,8 @@ import { SlideNextStepsComponent } from './components/slides/slide-next-steps.co
     SlideExpoAdvantageComponent,
     SlideIntelligenceLayerComponent,
     SlideMatchmakingBehaviorComponent,
+    SlideDisneyModelComponent,
+    SlideProactiveEngagementComponent,
     SlideParticipantListIntegrationComponent,
     SlideChatIntegrationComponent,
     SlideBusinessImpactComponent,
@@ -108,35 +112,45 @@ import { SlideNextStepsComponent } from './components/slides/slide-next-steps.co
         }
         @case (10) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-participant-list-integration />
+            <app-slide-disney-model />
           </div>
         }
         @case (11) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-chat-integration />
+            <app-slide-proactive-engagement />
           </div>
         }
         @case (12) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-business-impact />
+            <app-slide-participant-list-integration />
           </div>
         }
         @case (13) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-strategic-opportunity />
+            <app-slide-chat-integration />
           </div>
         }
         @case (14) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-implementation-approach />
+            <app-slide-business-impact />
           </div>
         }
         @case (15) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-long-term-vision />
+            <app-slide-strategic-opportunity />
           </div>
         }
         @case (16) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-implementation-approach />
+          </div>
+        }
+        @case (17) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-long-term-vision />
+          </div>
+        }
+        @case (18) {
           <div class="w-full h-full animate-fade-in">
             <app-slide-next-steps />
           </div>
